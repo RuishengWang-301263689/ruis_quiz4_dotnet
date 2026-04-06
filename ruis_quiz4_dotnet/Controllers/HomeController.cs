@@ -6,15 +6,9 @@ namespace ruis_quiz4_dotnet.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
-        {
-            _logger = logger;
-        }
-
         public IActionResult Index()
         {
+            ViewBag.Message = "Database access has already been done on April 6, 2026 by Ruisheng Wang";
             return View();
         }
 
